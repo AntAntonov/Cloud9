@@ -1,5 +1,8 @@
 # Python 3.7.15
 # Coding: utf-8  
+
+import time
+start = time.time()
 # Store the human preproinsulin sequence in a variable called preproinsulin:  
 preproInsulin = "malwmrllpllallalwgpdpaaafvnqhlcgshlvealylvcgergffytpktrreaedlqvgqvelgggpgagslqplalegslqkrgiveqcctsicslyqlenycn"  
 # Store the remaining sequence elements of human insulin in variables:  
@@ -22,3 +25,5 @@ while (pH <= 14):
     for x in ['y','c','d','e']}.values())))
     print(f'{pH:.2f}', netCharge)
     pH +=1
+    
+print(f'Completed in {time.time() - start:.5f}s')
